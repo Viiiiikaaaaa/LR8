@@ -15,7 +15,7 @@ public class Sum {
 
     private static void calculateSum(BigInteger start, BigInteger end, int numThreads) {
         long startTime = System.currentTimeMillis();
-        BigInteger sum = BigInteger.ZERO;
+        BigInteger sum;
 
         if (numThreads == 1){
             sum = singleThreadSummation(start, end);
